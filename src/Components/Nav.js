@@ -1,24 +1,28 @@
 import React from 'react';
-import {SlArrowDown} from "react-icons/sl";
-const Nav=()=>
-{
-    return(
+import { AiFillCaretDown, AiOutlineQuestionCircle, AiFillShopping, AiOutlineSearch } from "react-icons/ai";
+import { BiUser, BiMessageDots } from "react-icons/bi";
+import { BsCart4, BsHeart } from "react-icons/bs";
+const Nav = () => {
+    return (
         <div className="navbar">
+            {/* <img src='./Images/logo-white.png' alt='I-Ford Gaming' className='image'></img> */}
             <div className="search-container">
                 <input type="text" placeholder="Search"></input>
-                <button type="button" className="search">Search</button>
+                <button type="button" className="search"><AiOutlineSearch /></button>
             </div>
-            <div class="dropdown">
-                <button class="dropbtn">Account Details  <SlArrowDown/></button>
+            <div className="topnav-right">
+                <a href='./Cart'><BsCart4 />&ensp;Cart</a>
+                <a href='./Help'><AiOutlineQuestionCircle />&ensp;Help</a>
+            </div>
+            <div class="dropdown" style={{ float:'right'}}>
+                <button class="dropbtn">Account Details&ensp;<AiFillCaretDown /></button>
                 <div class="dropdown-content">
-                    <a href='./Accounts/MyAccount'>My Account</a>
-                      <a href='./Accounts/Orders'>Orders</a>
-                    <a href='./Accounts/Inbox'>Inbox</a>     
-                    <a href='./Accounts/Saved'>Saved Items</a>
+                    <a href='./Accounts/MyAccount'><BiUser />&ensp;My Account</a>
+                    <a href='./Accounts/Orders'><AiFillShopping />&ensp;Orders</a>
+                    <a href='./Accounts/Inbox'><BiMessageDots />&ensp;Inbox</a>
+                    <a href='./Accounts/Saved'><BsHeart />&ensp;Saved Items</a>
                 </div>
             </div>
-            <a href='./Help'>Help</a>
-            <a href='./Cart'>Cart</a>
         </div>
     )
 }
