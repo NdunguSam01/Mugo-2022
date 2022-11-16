@@ -3,13 +3,11 @@ import './CSS/Footer.css';
 import './CSS/Nav.css';
 import Nav from './Components/Nav';
 import Footer from './Components/Footer';
-
 function App() 
 {
   return (
     <div className="App">
       <Nav/>
-
       <Footer/>
     </div>
   );

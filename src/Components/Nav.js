@@ -16,7 +16,7 @@ const Nav=()=>
                     <a href='./Accounts/Inbox'>Inbox</a>     
                     <a href='./Accounts/Saved'>Saved Items</a>
                 </div>
-            </div> 
+            </div>
             <a href='./Help'>Help</a>
             <a href='./Cart'>Cart</a>
         </div>
