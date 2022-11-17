@@ -6,11 +6,14 @@
 .image
 {
     float: left;
+    width: 12em;
+    height: 110px;
+    border-radius: 50%;
 }
 .search-container 
 {
     float: left;
-    padding-left: 322px;
+    padding-left: 15em;
 }
 input[type=text] 
 {
@@ -46,8 +49,8 @@ input[type=text]
 }
 .navbar a,.dropdown
 {
-    padding-left: 3em;
-    padding-right: 3em;
+    padding-left: 2.5em;
+    padding-right: 2.5em;
 }
 .topnav-right 
 {

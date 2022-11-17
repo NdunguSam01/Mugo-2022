@@ -5,7 +5,7 @@ import { BsCart4, BsHeart } from "react-icons/bs";
 const Nav = () => {
     return (
         <div className="navbar">
-            {/* <img src='./Images/logo-white.png' alt='I-Ford Gaming' className='image'></img> */}
+            <img src='./Images/logo-white.png' alt='I-Ford Gaming' className='image'></img>
             <div className="search-container">
                 <input type="text" placeholder="Search"></input>
                 <button type="button" className="search"><AiOutlineSearch /></button>
