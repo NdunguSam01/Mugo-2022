@@ -1,25 +1,112 @@
-.sidenav 
+/* .nav
 {
-    width: 190px;
-    /* top: 100px;
-    left: 50px; */
-    height: 100%;
-    position: fixed;
-    z-index: 1;
+    width: 250px;
+    position: absolute;
     background: #333;
-    overflow-x: hidden;
-    padding: 8px 0px;
+    box-shadow: 5px 7px 10px #333;
 }
-.sidenav a 
+.nav ul
 {
-    padding: 6px 15px 6px 0px;
+    position: relative;
+    list-style-type: none;
+}
+.nav ul li a
+{
+    display: flex;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.15em;
     text-decoration: none;
-    text-align: center;
-    font-size: 25px;
+    text-transform: capitalize;
     color: white;
-    display: block;
+    padding: 10px 30px;
+    height: 50px;
+    transition: .5s ease;
 }
-.sidenav a:hover 
+.nav ul li a:hover
 {
-    color: greenyellow;
+    background: rgba(0, 0, 0, .7);
+    color: white;
+}
+.nav ul ul
+{
+    position: absolute;
+    left: 250px;
+    width: 200px;
+    display: none;
+    background:rgba(0, 0, 0, .7);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, .1);
+}
+.nav ul .dropdown
+{
+    position: relative;
+}
+.nav ul .dropdown:hover ul
+{
+    display:initial;
+} */
+#divMenu, ul, li, li li 
+{  
+    left: 0;    
+    margin: 0;  
+    padding: 0;  
+}  
+   
+#divMenu 
+{  
+    width: 220px;  
+    height: auto;  
+}  
+#divMenu li 
+{  
+    position: relative;
+    list-style-type: none;
+    background: #333; 
+    text-align: justify;   
+    padding: 10px;
+}     
+#divMenu li li 
+{  
+    list-style: none;  
+    position: relative;  
+    background: #333;
+    left: 220px;  
+    top: -27px;  
+}  
+#divMenu ul li a 
+{  
+    display: flex;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.15em;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: white;
+    padding: 10px 30px;
+    height: 50px;
+    transition: .1s ease;
+}    
+#divMenu ul ul 
+{  
+    position: absolute;  
+    visibility: hidden;  
+    top: 27px;  
+}  
+#divMenu ul li:hover ul 
+{  
+    visibility: visible;  
+}  
+#divMenu li:hover 
+{  
+    background: greenyellow;
+    color: white; 
+}  
+#divMenu ul li:hover ul li a:hover 
+{  
+    background: greenyellow;
+    color: white;
+}  
+#divMenu a:hover 
+{  
+    font-weight: bold;  
 }
