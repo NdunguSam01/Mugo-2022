@@ -1,6 +1,7 @@
 import './App.css';
 import './CSS/Footer.css';
 import './CSS/Nav.css';
+import './CSS/Home.css';
 import './CSS/Side.css';
 import {Route, Routes} from 'react-router-dom'
 import React from 'react';
@@ -13,6 +14,7 @@ import Footer from './Components/Footer';
 import Side from './Components/Side';
 import Cart from './Cart';
 import Help from './Help';
+import Home from './Home';
 function App() 
 {
   return (
@@ -45,7 +47,7 @@ function App()
       <Side/>
       <Footer/>
       <Routes>
-        <Route path="/" element={<App/>}/>
+        <Route path="/" element={<Home/>}/>
         <Route path="/Cart" element={<Cart/>}/>
         <Route path="/Help" element={<Help/>}/>
       </Routes>
