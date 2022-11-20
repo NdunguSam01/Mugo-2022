@@ -15,7 +15,7 @@ const Nav = () =>
                 <a href='./Cart'><BsCart4 />&ensp;Cart</a>
                 <a href='./Help'><AiOutlineQuestionCircle />&ensp;Help</a>
             </div>
-            <div className="dropdown" style={{ float:'right'}}>
+            <div className="dropdown" style={{float:'right'}}>
                 <button className="dropbtn">Account Details&ensp;<AiFillCaretDown /></button>
                 <div className="dropdown-content">
                     <a href='./Accounts/MyAccount'><BiUser />&ensp;My Account</a>
